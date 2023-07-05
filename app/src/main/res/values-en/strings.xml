@@ -1,7 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Turistiandov2</string>
-    <string name="resenahoteles">Considerando que la libertad, la justicia y la paz en el mundo tienen por base el reconocimiento de la dignidad intrinseca y de los derechos iguales e inalienables de todos los miembros de la familia humana;
-Considerando que el desconocimiento y el menosprecio de los derechos humanos han originado actos de barbarie ultrajantes para la conciencia de la humanidad, y que se ha proclamado, como la aspiracion mas elevada del hombre, el advenimiento de un mundo en que los seres humanos, liberados del temor y de la miseria, disfruten de la libertad de palabra y de la libertad de creencias;
+    <string name="resenahoteles">
+        hotel review description
+    </string>
+
+    <string name="resenarestaurantes">
+        Restaurant review description
+    </string>
+
+    <string name="resenaSitios">
+        Description and review of tourist sites
+    </string>
+
+    <string name="opcion1">
+        English
+    </string>
+
+    <string name="opcion2">
+        Spanish
+    </string>
+
+    <string name="opcion3">
+        Italian
+    </string>
+
+    <string name="opcion4">
+        About us
     </string>
 </resources>
