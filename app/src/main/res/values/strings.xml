@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Turistiandov2</string>
     <string name="resenahoteles">
-        descripcion reseña hoteles
+        En el municipio La macarena podras encontrar diferentes hoteles desde 55.000 (COP) mil pesos colombianos, con gran variedad de ofertas donde la gran mayoria incluye internet y comidas.
     </string>
 
     <string name="resenarestaurantes">
@@ -9,7 +9,7 @@
     </string>
 
     <string name="resenaSitios">
-        descripcion reseña sitios turisticos
+        Caño Cristales es el principal atractivo turistico del municipio de La Macarena, pero no es el unico, esta extensa zona cuenta con gran parte de su territorio dentro del AMEM (area de Manejo Especial de la Macarena), representando escenarios admirables en donde se puede realizar Turismo de Naturaleza.
     </string>
 
     <string name="opcion1">
@@ -27,4 +27,20 @@
     <string name="opcion4">
         Acerca de nosotros
     </string>
+
+    <string name="hoteles">
+        HOTELES
+    </string>
+
+    <string name="restaurantes">
+        RESTAURANTES
+    </string>
+
+    <string name="sitios">
+        SITIOS TURISTICOS
+    </string>
+
+
+
+
 </resources>

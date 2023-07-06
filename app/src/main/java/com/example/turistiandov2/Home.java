@@ -2,6 +2,7 @@ package com.example.turistiandov2;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -29,7 +30,8 @@ public class Home extends AppCompatActivity {
         hoteles.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(Home.this, "UwU", Toast.LENGTH_SHORT).show();
+                Intent intenthoteles=new Intent(Home.this,Hoteles_Home.class);
+                startActivity(intenthoteles);
             }
         });
 
@@ -37,7 +39,8 @@ public class Home extends AppCompatActivity {
         restaurantes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(Home.this, "UwU", Toast.LENGTH_SHORT).show();
+                Intent intentrestaurantes=new Intent(Home.this,Restaurantes_Home.class);
+                startActivity(intentrestaurantes);
             }
         });
 
@@ -45,7 +48,8 @@ public class Home extends AppCompatActivity {
        sitios.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(Home.this, "UwU", Toast.LENGTH_SHORT).show();
+                Intent intentsitios=new Intent(Home.this,Sitios_Home.class);
+                startActivity(intentsitios);
             }
         });
 
@@ -61,18 +65,26 @@ public class Home extends AppCompatActivity {
        switch (itemSeleccionado){
 
            case(R.id.opcion1):
+               Toast.makeText(this, "Quiero que este en ingles", Toast.LENGTH_SHORT).show();
                break;
 
            case(R.id.opcion2):
+               Toast.makeText(this, "Quiero que este en español", Toast.LENGTH_SHORT).show();
                break;
 
            case(R.id.opcion3):
+               Toast.makeText(this, "Quiero que este en italiano", Toast.LENGTH_SHORT).show();
                break;
 
            case(R.id.opcion4):
+               Toast.makeText(this, "Quiero ir acerca de nosotros", Toast.LENGTH_SHORT).show();
                break;
 
        }
        return super.onOptionsItemSelected(items);
+    }
+
+    public void cambiaridioma(String idioma){
+
     }
 }

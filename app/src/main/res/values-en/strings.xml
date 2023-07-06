@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name">Turistiandov2</string>
     <string name="resenahoteles">
-        hotel review description
+        In the municipality of La Macarena, you can find different hotels starting from 55,000 (COP) Colombian pesos, with a wide variety of offers where the majority includes internet and meals.
     </string>
 
     <string name="resenarestaurantes">
@@ -10,7 +10,7 @@
     </string>
 
     <string name="resenaSitios">
-        Description and review of tourist sites
+       Caño Cristales is the main tourist attraction in the municipality of La Macarena, but its not the only one. This extensive area has a large portion of its territory within the AMEM (Special Management Area of La Macarena), representing admirable scenarios where Nature Tourism can be enjoyed.
     </string>
 
     <string name="opcion1">
@@ -27,5 +27,17 @@
 
     <string name="opcion4">
         About us
+    </string>
+
+    <string name="hoteles">
+        HOTELS
+    </string>
+
+    <string name="restaurantes">
+        RESTAURANTS
+    </string>
+
+    <string name="sitios">
+        TOURIST SITES
     </string>
 </resources>

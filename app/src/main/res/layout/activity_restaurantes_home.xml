@@ -4,6 +4,67 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/hoteles"
     tools:context=".Restaurantes_Home">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.2"
+        android:textAlignment="center"
+        android:text="@string/restaurantes"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        />
+
+
+    <TextView
+        android:id="@+id/Hotel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/titulo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.02"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        android:text="@string/resenarestaurantes"
+        />
+
+
+    <ImageView
+        android:id="@+id/icono"
+        android:layout_width="141dp"
+        android:layout_height="112dp"
+        android:src="@drawable/hotel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Hotel"
+        app:layout_constraintVertical_bias="0.05"
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/botonhoteles"
+        android:backgroundTint="@color/purple_200"
+        android:text="Ver mas"
+        android:layout_marginHorizontal="30dp"
+        app:layout_constraintTop_toBottomOf="@id/icono"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.2"
+        />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

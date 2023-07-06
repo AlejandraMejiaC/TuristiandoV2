@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name">Turistiandov2</string>
     <string name="resenahoteles">
-    descrizione recensione hotel
+  Nel comune di La Macarena puoi trovare diversi hotel a partire da 55.000 (COP) pesos colombiani, con una vasta gamma di offerte in cui la maggior parte include internet e pasti.
     </string>
 
     <string name="resenarestaurantes">
@@ -10,7 +10,7 @@
     </string>
 
     <string name="resenaSitios">
-        Descrizione e recensione dei siti turistici
+        Caño Cristales e lattrazione turistica principale nel comune di La Macarena, ma non e lunica. Questa vasta area ha una gran parte del suo territorio allinterno dellAMEM (Area di Gestione Speciale della Macarena), rappresentando scenari ammirabili dove e possibile praticare il turismo naturalistico.
     </string>
 
     <string name="opcion1">
@@ -27,5 +27,17 @@
 
     <string name="opcion4">
         chi siamo
+    </string>
+
+    <string name="hoteles">
+        HOTEL
+    </string>
+
+    <string name="restaurantes">
+        RISTORANTI
+    </string>
+
+    <string name="sitios">
+        LUOGHI TURISTICI
     </string>
 </resources>
