@@ -19,6 +19,7 @@
         android:textAlignment="center"
         android:text="@string/hoteles"
         android:textStyle="bold"
+        android:textColor="@color/cornflowerblue"
         android:textSize="40dp"
         />
 
@@ -41,9 +42,9 @@
 
     <ImageView
         android:id="@+id/icono"
-        android:layout_width="141dp"
-        android:layout_height="112dp"
-        android:src="@drawable/hotel"
+        android:layout_width="332dp"
+        android:layout_height="176dp"
+        android:src="@drawable/hoteldos"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

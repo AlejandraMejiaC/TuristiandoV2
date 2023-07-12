@@ -4,6 +4,81 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Sitios_Home">
+    tools:context=".Sitios_Home"
+    android:background="@drawable/hoteles"
+    >
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.2"
+        android:textAlignment="center"
+        android:textColor="@color/cornflowerblue"
+        android:text="@string/sitios"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        />
+
+
+    <TextView
+        android:id="@+id/Hotel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/titulo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.1"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:text="@string/resenaSitios"
+        />
+
+
+    <ImageView
+        android:id="@+id/imagen"
+        android:layout_width="300dp"
+        android:layout_height="180dp"
+        android:src="@drawable/canocristales"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Hotel"
+        app:layout_constraintVertical_bias="0.07"
+
+        />
+
+    <ImageView
+        android:id="@+id/imagen2"
+        android:layout_width="60dp"
+        android:layout_height="97dp"
+        android:src="@drawable/cascada"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imagen"
+
+        app:layout_constraintVertical_bias="0.53" />
+
+    <Button
+        android:id="@+id/botonhoteles"
+        android:layout_width="152dp"
+        android:layout_height="54dp"
+        android:layout_marginHorizontal="30dp"
+        android:backgroundTint="@color/cornflowerblue"
+        android:text="Ver mas"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imagen"
+        app:layout_constraintVertical_bias="0.144" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
