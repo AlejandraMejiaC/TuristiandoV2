@@ -40,4 +40,16 @@
     <string name="sitios">
         LUOGHI TURISTICI
     </string>
+
+    <string name="usuario">
+        UTENTE
+    </string>
+
+    <string name="contraseña">
+        PASSWORD
+    </string>
+
+    <string name="ingresar">
+        ACCEDERE
+    </string>
 </resources>

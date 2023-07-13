@@ -40,4 +40,16 @@
     <string name="sitios">
         TOURIST SITES
     </string>
+
+    <string name="usuario">
+         USER
+    </string>
+
+    <string name="contraseña">
+        PASSWORD
+    </string>
+
+    <string name="ingresar">
+        LOG IN
+    </string>
 </resources>

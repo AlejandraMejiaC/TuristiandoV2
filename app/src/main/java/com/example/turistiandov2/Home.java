@@ -10,7 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class Home extends AppCompatActivity {
+public class  Home extends AppCompatActivity {
 
     //Zona de los atributos
     Button hoteles;
@@ -65,19 +65,20 @@ public class Home extends AppCompatActivity {
        switch (itemSeleccionado){
 
            case(R.id.opcion1):
-               Toast.makeText(this, "Quiero que este en ingles", Toast.LENGTH_SHORT).show();
+
                break;
 
            case(R.id.opcion2):
-               Toast.makeText(this, "Quiero que este en español", Toast.LENGTH_SHORT).show();
+
                break;
 
            case(R.id.opcion3):
-               Toast.makeText(this, "Quiero que este en italiano", Toast.LENGTH_SHORT).show();
+
                break;
 
            case(R.id.opcion4):
-               Toast.makeText(this, "Quiero ir acerca de nosotros", Toast.LENGTH_SHORT).show();
+                    Intent intent=new Intent(Home.this,AcercaSolucion.class);
+                    startActivity(intent);
                break;
 
        }
