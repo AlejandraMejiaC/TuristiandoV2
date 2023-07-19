@@ -52,4 +52,8 @@
     <string name="ingresar">
         ACCEDERE
     </string>
+
+    <string name="bienvenido">
+        BENVENUTO
+    </string>
 </resources>

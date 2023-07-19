@@ -52,4 +52,8 @@
     <string name="ingresar">
         LOG IN
     </string>
+
+    <string name="bienvenido">
+        WELCOME
+    </string>
 </resources>
