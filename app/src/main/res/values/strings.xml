@@ -56,7 +56,15 @@
         BIENVENID@
     </string>
 
+    <string name="resena">
+        SOBRE MI
+    </string>
 
+    <string name="resenacont">
+        Soy una estudiante de la tecnica de software en el cesde, si te interesa mi contenido o esta aplicacion estare disponible para ayudarte para que tu aplicacion de esnsueño se haga realidad
+    </string>
 
-
+    <string name="nombre">
+        ALEJANDRA MEJIA CORREA
+    </string>
 </resources>

@@ -56,4 +56,17 @@
     <string name="bienvenido">
         WELCOME
     </string>
+
+    <string name="resena">
+        ABOUT ME
+    </string>
+
+    <string name="resenacont">
+        I am a student of software engineering at cesde,if you are interested in my content or this application I will be available to help you to make your dream application come true
+    </string>
+
+    <string name="nombre">
+        ALEJANDRA MEJIA CORREA
+    </string>
+
 </resources>
