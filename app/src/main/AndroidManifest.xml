@@ -26,13 +26,6 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".acerca"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
             android:name=".Sitios_Home"
             android:exported="false" />
         <activity
