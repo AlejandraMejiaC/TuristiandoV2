@@ -65,8 +65,26 @@
         I am a student of software engineering at cesde,if you are interested in my content or this application I will be available to help you to make your dream application come true
     </string>
 
-    <string name="nombre">
+    <string name="nombreacerca">
         ALEJANDRA MEJIA CORREA
     </string>
+
+    <string name="nombre">
+        NAME:
+    </string>
+
+    <string name="precio">
+        PRICE:
+    </string>
+
+    <string name="telefono">
+        CONTACT:
+    </string>
+
+    <string name="guiaturistico">
+        TOUR GUIDE:
+    </string>
+
+
 
 </resources>

@@ -64,7 +64,25 @@
         Soy una estudiante de la tecnica de software en el cesde, si te interesa mi contenido o esta aplicacion estare disponible para ayudarte para que tu aplicacion de esnsueño se haga realidad
     </string>
 
-    <string name="nombre">
+    <string name="nombreacerca">
         ALEJANDRA MEJIA CORREA
     </string>
+
+    <string name="nombre">
+        NOMBRE:
+    </string>
+
+    <string name="precio">
+        PRECIO:
+    </string>
+
+    <string name="telefono">
+        CONTACTO:
+    </string>
+
+    <string name="guiaturistico">
+        GUIA TURISTICO:
+    </string>
+
+
 </resources>

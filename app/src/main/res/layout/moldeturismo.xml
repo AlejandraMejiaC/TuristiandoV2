@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/hoteles">
+
+    <ImageView
+        android:id="@+id/icono"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:src="@drawable/mapa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.129" />
+
+    <TextView
+        android:id="@+id/nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text="@string/nombre"
+        android:textColor="@color/cornflowerblue"
+        android:textSize="15dp"
+        android:textAlignment="textStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toEndOf="@id/icono"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.130" />
+
+    <TextView
+        android:id="@+id/lugarTuristico"
+        android:layout_width="185dp"
+        android:layout_height="60dp"
+        android:text="caño cristales"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintStart_toEndOf="@id/nombre"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.130" />
+
+    <ImageView
+        android:id="@+id/foto"
+        android:layout_width="368dp"
+        android:layout_height="213dp"
+        android:src="@drawable/canocristales"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.372"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lugarTuristico"
+        app:layout_constraintVertical_bias="0.045" />
+
+    <TextView
+        android:id="@+id/guiaturistico"
+        android:layout_width="110dp"
+        android:layout_height="70dp"
+        android:text="@string/guiaturistico"
+        android:textAlignment="center"
+        android:textColor="@color/cornflowerblue"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/foto"
+        app:layout_constraintVertical_bias="0.049" />
+
+    <TextView
+        android:id="@+id/numeroContacto"
+        android:layout_width="229dp"
+        android:layout_height="53dp"
+        android:text="5255145525"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toEndOf="@id/guiaturistico"
+        app:layout_constraintTop_toBottomOf="@id/foto"
+        app:layout_constraintVertical_bias="0.046" />
+
+    <TextView
+        android:id="@+id/precioHotel"
+        android:layout_width="110dp"
+        android:layout_height="45dp"
+        android:text="@string/precio"
+        android:textAlignment="textStart"
+        android:textColor="@color/cornflowerblue"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guiaturistico"
+        app:layout_constraintVertical_bias="0.066" />
+
+    <TextView
+        android:id="@+id/cop"
+        android:layout_width="237dp"
+        android:layout_height="45dp"
+        android:text="97.500 COP"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.437"
+        app:layout_constraintStart_toEndOf="@id/precioHotel"
+        app:layout_constraintTop_toBottomOf="@id/numeroContacto"
+        app:layout_constraintVertical_bias="0.132" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
