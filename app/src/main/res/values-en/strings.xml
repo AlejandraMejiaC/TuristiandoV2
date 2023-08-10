@@ -6,7 +6,7 @@
     </string>
 
     <string name="resenarestaurantes">
-        Restaurant review description
+        In this great place you will not only have great views of nature but also good views for your stomach, so you can delight your tongue book now
     </string>
 
     <string name="resenaSitios">
@@ -84,6 +84,11 @@
     <string name="guiaturistico">
         TOUR GUIDE:
     </string>
+
+    <string name="plato">
+        RECOMMENDED DISH:
+    </string>
+
 
 
 

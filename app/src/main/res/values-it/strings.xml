@@ -85,4 +85,8 @@
         GUIDA TURISTICA:
     </string>
 
+    <string name="plato">
+        PIATTO CONSIGLIATO:
+    </string>
+
 </resources>
