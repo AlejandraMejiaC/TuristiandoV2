@@ -7,7 +7,7 @@
     android:background="@drawable/hoteles">
 
     <ImageView
-        android:id="@+id/icono"
+        android:id="@+id/iconoMoldeSitios"
         android:layout_width="70dp"
         android:layout_height="60dp"
         android:src="@drawable/mapa"
@@ -19,7 +19,7 @@
         app:layout_constraintVertical_bias="0.130" />
 
     <TextView
-        android:id="@+id/nombre"
+        android:id="@+id/nombreMoldeSitios"
         android:layout_width="wrap_content"
         android:layout_height="60dp"
         android:text="@string/nombre"
@@ -29,7 +29,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.045"
-        app:layout_constraintStart_toEndOf="@id/icono"
+        app:layout_constraintStart_toEndOf="@id/iconoMoldeSitios"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.130" />
 
@@ -44,12 +44,12 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.285"
-        app:layout_constraintStart_toEndOf="@id/nombre"
+        app:layout_constraintStart_toEndOf="@id/nombreMoldeSitios"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.130" />
 
     <ImageView
-        android:id="@+id/foto"
+        android:id="@+id/fotoMoldeSitios"
         android:layout_width="368dp"
         android:layout_height="213dp"
         android:src="@drawable/canocristales"
@@ -65,18 +65,18 @@
         android:layout_width="110dp"
         android:layout_height="70dp"
         android:text="@string/guiaturistico"
-        android:textAlignment="center"
+        android:textAlignment="textStart"
         android:textColor="@color/cornflowerblue"
         android:textSize="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.053"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/foto"
+        app:layout_constraintTop_toBottomOf="@id/fotoMoldeSitios"
         app:layout_constraintVertical_bias="0.049" />
 
     <TextView
-        android:id="@+id/numeroContacto"
+        android:id="@+id/numeroContactoMoldeSitios"
         android:layout_width="229dp"
         android:layout_height="53dp"
         android:text="5255145525"
@@ -87,11 +87,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toEndOf="@id/guiaturistico"
-        app:layout_constraintTop_toBottomOf="@id/foto"
+        app:layout_constraintTop_toBottomOf="@id/fotoMoldeSitios"
         app:layout_constraintVertical_bias="0.046" />
 
     <TextView
-        android:id="@+id/precioHotel"
+        android:id="@+id/precioMoldeSitios"
         android:layout_width="110dp"
         android:layout_height="45dp"
         android:text="@string/precio"
@@ -106,7 +106,7 @@
         app:layout_constraintVertical_bias="0.066" />
 
     <TextView
-        android:id="@+id/cop"
+        android:id="@+id/copMoldeSitios"
         android:layout_width="237dp"
         android:layout_height="45dp"
         android:text="97.500 COP"
@@ -116,8 +116,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.437"
-        app:layout_constraintStart_toEndOf="@id/precioHotel"
-        app:layout_constraintTop_toBottomOf="@id/numeroContacto"
+        app:layout_constraintStart_toEndOf="@id/precioMoldeSitios"
+        app:layout_constraintTop_toBottomOf="@id/numeroContactoMoldeSitios"
         app:layout_constraintVertical_bias="0.132" />
 
 
