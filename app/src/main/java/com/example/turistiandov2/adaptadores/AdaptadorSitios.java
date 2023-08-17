@@ -10,18 +10,19 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.turistiandov2.Moldes.MoldeRestaurantes;
+import com.example.turistiandov2.Moldes.MoldeSitios;
 import com.example.turistiandov2.R;
 
 import java.util.ArrayList;
 
 public class AdaptadorSitios extends RecyclerView.Adapter<AdaptadorSitios.viewHolder>{
 
-    public ArrayList<MoldeRestaurantes> listaSitios;
+    public ArrayList<MoldeSitios> listaSitios;
 
     public AdaptadorSitios() {
     }
 
-    public AdaptadorSitios(ArrayList<MoldeRestaurantes> listaSitios) {
+    public AdaptadorSitios(ArrayList<MoldeSitios> listaSitios) {
         this.listaSitios = listaSitios;
     }
 
@@ -45,20 +46,26 @@ public class AdaptadorSitios extends RecyclerView.Adapter<AdaptadorSitios.viewHo
     public class viewHolder extends RecyclerView.ViewHolder {
         ImageView fotoSitios;
         TextView nombreSitio;
+        TextView nombreGuia;
         TextView contactoGuia;
         TextView precioSitio;
         public viewHolder(@NonNull View itemView) {
             super(itemView);
+             nombreGuia = itemView.findViewById(R.id.nombreGuiaMoldeSitios);
              fotoSitios = itemView.findViewById(R.id.fotoMoldeSitios);
              nombreSitio = itemView.findViewById(R.id.lugarTuristico);
              contactoGuia = itemView.findViewById(R.id.numeroContactoMoldeSitios);
              precioSitio = itemView.findViewById(R.id.precioMoldeSitios);
         }
 
-        public void actualizarDatos(MoldeRestaurantes moldeRestaurantes) {
-            fotoSitios.setImageResource(moldeRestaurantes.getFoto());
-            nombreSitio.setText(moldeRestaurantes.getNombre());
-            precioSitio.setText(moldeRestaurantes.getRangoPrecio());
+        public void actualizarDatos(MoldeSitios moldeSitios) {
+            fotoSitios.setImageResource(moldeSitios.getFoto());
+            nombreSitio.setText(moldeSitios.getNombre());
+            precioSitio.setText(moldeSitios.getPrecio());
+            nombreGuia.setText(moldeSitios.getNombreGuia());
+            contactoGuia.setText(moldeSitios.getTelefono());
         }
+
+
     }
 }

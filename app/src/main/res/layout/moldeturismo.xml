@@ -70,16 +70,16 @@
         android:textSize="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintHorizontal_bias="0.055"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/fotoMoldeSitios"
-        app:layout_constraintVertical_bias="0.049" />
+        app:layout_constraintVertical_bias="0.050" />
 
     <TextView
-        android:id="@+id/numeroContactoMoldeSitios"
+        android:id="@+id/nombreGuiaMoldeSitios"
         android:layout_width="229dp"
         android:layout_height="53dp"
-        android:text="5255145525"
+        android:text="PEPITO PEREZ"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="15dp"
@@ -89,6 +89,36 @@
         app:layout_constraintStart_toEndOf="@id/guiaturistico"
         app:layout_constraintTop_toBottomOf="@id/fotoMoldeSitios"
         app:layout_constraintVertical_bias="0.046" />
+
+    <TextView
+        android:id="@+id/contactoGuia"
+        android:layout_width="110dp"
+        android:layout_height="70dp"
+        android:text="@string/contactoguia"
+        android:textAlignment="textStart"
+        android:textColor="@color/cornflowerblue"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guiaturistico"
+        app:layout_constraintVertical_bias="0.050" />
+
+    <TextView
+        android:id="@+id/telefonoguia"
+        android:layout_width="237dp"
+        android:layout_height="45dp"
+        android:text="5255145525"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.437"
+        app:layout_constraintStart_toEndOf="@id/precioMoldeSitios"
+        app:layout_constraintTop_toBottomOf="@id/nombreGuiaMoldeSitios"
+        app:layout_constraintVertical_bias="0.132" />
 
     <TextView
         android:id="@+id/precioMoldeSitios"
@@ -102,7 +132,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.052"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/guiaturistico"
+        app:layout_constraintTop_toBottomOf="@id/contactoGuia"
         app:layout_constraintVertical_bias="0.066" />
 
     <TextView
@@ -115,10 +145,10 @@
         android:textSize="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.437"
+        app:layout_constraintHorizontal_bias="0.460"
         app:layout_constraintStart_toEndOf="@id/precioMoldeSitios"
-        app:layout_constraintTop_toBottomOf="@id/numeroContactoMoldeSitios"
-        app:layout_constraintVertical_bias="0.132" />
+        app:layout_constraintTop_toBottomOf="@id/telefonoguia"
+        app:layout_constraintVertical_bias="0.180" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
