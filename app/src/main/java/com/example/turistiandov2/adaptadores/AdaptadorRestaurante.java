@@ -62,6 +62,7 @@ public class AdaptadorRestaurante extends RecyclerView.Adapter<AdaptadorRestaura
             fotoRestaurante.setImageResource(moldeRestaurantes.getFoto());
             nombreRestaurante.setText(moldeRestaurantes.getNombre());
             precioRestaurante.setText(moldeRestaurantes.getRangoPrecio());
+            platoRecomendado.setText(moldeRestaurantes.getPlatoRecomendado());
             contactoRestaurante.setText(moldeRestaurantes.getTelefono());
         }
     }
