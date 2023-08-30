@@ -1,126 +1,136 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@drawable/moldesfondo">
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="25dp"
+    app:cardElevation="5dp"
+    app:cardUseCompatPadding="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <ImageView
-        android:id="@+id/fotoMoldeHotel"
-        android:paddingTop="20dp"
-        android:layout_width="390dp"
-        android:layout_height="260dp"
-        android:src="@drawable/loscolores"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.500"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.175" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fondomolde">
 
-    <ImageView
-        android:id="@+id/iconoMoldeHotel"
-        android:layout_width="61dp"
-        android:layout_height="58dp"
-        android:src="@drawable/moldehotelicono"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.091"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/fotoMoldeHotel"
-        app:layout_constraintVertical_bias="0.036" />
+        <ImageView
+            android:id="@+id/fotoMoldeHotel"
+            android:paddingTop="20dp"
+            android:layout_width="390dp"
+            android:layout_height="260dp"
+            android:src="@drawable/loscolores"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.500"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.175" />
 
-    <TextView
-        android:id="@+id/nombreMoldeHotel"
-        android:layout_width="113dp"
-        android:layout_height="51dp"
-        android:text="@string/nombre"
-        android:textAlignment="textStart"
-        android:textSize="25dp"
-        android:textColor="@color/cornflowerblue"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.05"
-        app:layout_constraintStart_toEndOf="@id/iconoMoldeHotel"
-        app:layout_constraintTop_toBottomOf="@id/fotoMoldeHotel"
-        app:layout_constraintVertical_bias="0.035" />
+        <ImageView
+            android:id="@+id/iconoMoldeHotel"
+            android:layout_width="61dp"
+            android:layout_height="58dp"
+            android:src="@drawable/moldehotelicono"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.091"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fotoMoldeHotel"
+            app:layout_constraintVertical_bias="0.036" />
 
-    <TextView
-        android:id="@+id/hotelMolde"
-        android:layout_width="164dp"
-        android:layout_height="51dp"
-        android:textSize="20dp"
-        android:text="Los Colores Ecoparque"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.05"
-        app:layout_constraintStart_toEndOf="@id/nombreMoldeHotel"
-        app:layout_constraintTop_toBottomOf="@id/fotoMoldeHotel"
-        app:layout_constraintVertical_bias="0.035" />
+        <TextView
+            android:id="@+id/nombreMoldeHotel"
+            android:layout_width="113dp"
+            android:layout_height="51dp"
+            android:text="@string/nombre"
+            android:textAlignment="textStart"
+            android:textSize="25dp"
+            android:textColor="@color/cornflowerblue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.05"
+            app:layout_constraintStart_toEndOf="@id/iconoMoldeHotel"
+            app:layout_constraintTop_toBottomOf="@id/fotoMoldeHotel"
+            app:layout_constraintVertical_bias="0.035" />
 
-    <TextView
-        android:id="@+id/precioMoldeHotel"
-        android:layout_width="109dp"
-        android:layout_height="44dp"
-        android:textSize="25dp"
-        android:text="@string/precio"
-        android:textAlignment="textStart"
-        android:textColor="@color/cornflowerblue"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.107"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/iconoMoldeHotel"
-        app:layout_constraintVertical_bias="0.035" />
+        <TextView
+            android:id="@+id/hotelMolde"
+            android:layout_width="164dp"
+            android:layout_height="51dp"
+            android:textSize="20dp"
+            android:text="Los Colores Ecoparque"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.05"
+            app:layout_constraintStart_toEndOf="@id/nombreMoldeHotel"
+            app:layout_constraintTop_toBottomOf="@id/fotoMoldeHotel"
+            app:layout_constraintVertical_bias="0.035" />
 
-    <TextView
-        android:id="@+id/copMoldeHotel"
-        android:layout_width="237dp"
-        android:layout_height="45dp"
-        android:text="97.500 COP"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.05"
-        app:layout_constraintStart_toEndOf="@id/precioMoldeHotel"
-        app:layout_constraintTop_toBottomOf="@id/iconoMoldeHotel"
-        app:layout_constraintVertical_bias="0.035" />
+        <TextView
+            android:id="@+id/precioMoldeHotel"
+            android:layout_width="109dp"
+            android:layout_height="44dp"
+            android:textSize="25dp"
+            android:text="@string/precio"
+            android:textAlignment="textStart"
+            android:textColor="@color/cornflowerblue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.107"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iconoMoldeHotel"
+            app:layout_constraintVertical_bias="0.035" />
 
-    <TextView
-        android:id="@+id/contactoMoldeHotel"
-        android:layout_width="110dp"
-        android:layout_height="70dp"
-        android:text="@string/telefono"
-        android:textAlignment="textStart"
-        android:textColor="@color/cornflowerblue"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.110"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/precioMoldeHotel"
-        app:layout_constraintVertical_bias="0.05" />
+        <TextView
+            android:id="@+id/copMoldeHotel"
+            android:layout_width="237dp"
+            android:layout_height="45dp"
+            android:text="97.500 COP"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.05"
+            app:layout_constraintStart_toEndOf="@id/precioMoldeHotel"
+            app:layout_constraintTop_toBottomOf="@id/iconoMoldeHotel"
+            app:layout_constraintVertical_bias="0.035" />
 
-    <TextView
-        android:id="@+id/numeroContactoMoldeHotel"
-        android:layout_width="235dp"
-        android:layout_height="70dp"
-        android:text="5255145525"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.110"
-        app:layout_constraintStart_toEndOf="@id/contactoMoldeHotel"
-        app:layout_constraintTop_toBottomOf="@id/copMoldeHotel"
-        app:layout_constraintVertical_bias="0.05" />
+        <TextView
+            android:id="@+id/contactoMoldeHotel"
+            android:layout_width="110dp"
+            android:layout_height="70dp"
+            android:text="@string/telefono"
+            android:textAlignment="textStart"
+            android:textColor="@color/cornflowerblue"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.110"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/precioMoldeHotel"
+            app:layout_constraintVertical_bias="0.05" />
 
+        <TextView
+            android:id="@+id/numeroContactoMoldeHotel"
+            android:layout_width="235dp"
+            android:layout_height="70dp"
+            android:text="5255145525"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.110"
+            app:layout_constraintStart_toEndOf="@id/contactoMoldeHotel"
+            app:layout_constraintTop_toBottomOf="@id/copMoldeHotel"
+            app:layout_constraintVertical_bias="0.05" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
+</androidx.cardview.widget.CardView>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
