@@ -1,5 +1,6 @@
 package com.example.turistiandov2.adaptadores;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,6 +10,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.turistiandov2.AmpliandoHotel;
+import com.example.turistiandov2.AmpliandoSitios;
 import com.example.turistiandov2.Moldes.MoldeRestaurantes;
 import com.example.turistiandov2.Moldes.MoldeSitios;
 import com.example.turistiandov2.R;
@@ -64,6 +67,15 @@ public class AdaptadorSitios extends RecyclerView.Adapter<AdaptadorSitios.viewHo
             precioSitio.setText(moldeSitios.getPrecio());
             nombreGuia.setText(moldeSitios.getNombreGuia());
             contactoGuia.setText(moldeSitios.getTelefono());
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(itemView.getContext(), AmpliandoSitios.class);
+                    intent.putExtra("datoshotel",moldeSitios);
+                    itemView.getContext().startActivity(intent);
+                }
+            });
         }
 
 

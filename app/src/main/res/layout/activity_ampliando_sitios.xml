@@ -5,10 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/hoteles"
-    tools:context=".AmpliandoHotel">
-
+    tools:context=".AmpliandoSitios">
     <TextView
-        android:id="@+id/NombreAmpliandoHotel"
+        android:id="@+id/NombreAmpliandoSitios"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="HOSTAL CANO NEVERA"
@@ -24,7 +23,7 @@
         app:layout_constraintVertical_bias="0.120" />
 
     <ImageView
-        android:id="@+id/FotoAmpliandoHotel"
+        android:id="@+id/FotoAmpliandoSitios"
         android:layout_width="290dp"
         android:layout_height="210dp"
         android:src="@drawable/canonevera"
@@ -32,11 +31,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.500"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/NombreAmpliandoHotel"
+        app:layout_constraintTop_toBottomOf="@id/NombreAmpliandoSitios"
         app:layout_constraintVertical_bias="0.055" />
 
     <TextView
-        android:id="@+id/descripcioAmpliandoHotel"
+        android:id="@+id/descripcioAmpliandoSitios"
         android:layout_width="355dp"
         android:layout_height="100dp"
         android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vestibulum quam nec justo efficitur, a ultrices eros tristique. Nulla facilisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla facilisi. Nullam ac nunc eu elit aliquet aliquam."
@@ -44,11 +43,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/FotoAmpliandoHotel"
+        app:layout_constraintTop_toBottomOf="@id/FotoAmpliandoSitios"
         app:layout_constraintVertical_bias="0.075" />
 
     <TextView
-        android:id="@+id/precioHotelAmpliando"
+        android:id="@+id/precioAmpliandoSitios"
         android:layout_width="175dp"
         android:layout_height="40dp"
         android:text="250.000"
@@ -60,11 +59,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.120"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/descripcioAmpliandoHotel"
+        app:layout_constraintTop_toBottomOf="@id/descripcioAmpliandoSitios"
         app:layout_constraintVertical_bias="0.05" />
 
     <TextView
-        android:id="@+id/telefonoHotelAmpliando"
+        android:id="@+id/telefonoAmpliandoSitios"
         android:layout_width="175dp"
         android:layout_height="40dp"
         android:text="3255036829"
@@ -75,8 +74,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.20"
-        app:layout_constraintStart_toEndOf="@id/precioHotelAmpliando"
-        app:layout_constraintTop_toBottomOf="@id/descripcioAmpliandoHotel"
+        app:layout_constraintStart_toEndOf="@id/precioAmpliandoSitios"
+        app:layout_constraintTop_toBottomOf="@id/descripcioAmpliandoSitios"
         app:layout_constraintVertical_bias="0.05" />
 
     <ImageView
@@ -88,10 +87,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.175"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/precioHotelAmpliando"
+        app:layout_constraintTop_toBottomOf="@id/precioAmpliandoSitios"
         app:layout_constraintVertical_bias="0.200" />
 
     <Button
+        android:id="@+id/botonReservarSitios"
         android:layout_width="205dp"
         android:layout_height="60dp"
         android:layout_marginStart="20dp"
@@ -104,8 +104,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.175"
         app:layout_constraintStart_toEndOf="@id/iconAmpliandoHotel"
-        app:layout_constraintTop_toBottomOf="@id/telefonoHotelAmpliando"
+        app:layout_constraintTop_toBottomOf="@id/telefonoAmpliandoSitios"
         app:layout_constraintVertical_bias="0.0"/>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
