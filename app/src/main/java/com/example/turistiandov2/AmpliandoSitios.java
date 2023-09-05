@@ -17,7 +17,7 @@ public class AmpliandoSitios extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ampliando_sitios);
 
-        moldeSitios=(MoldeSitios) getIntent().getSerializableExtra("datoshotel");
+        moldeSitios=(MoldeSitios) getIntent().getSerializableExtra("datossitios");
         Toast.makeText(this, moldeSitios.getNombre(), Toast.LENGTH_LONG).show();
     }
 }

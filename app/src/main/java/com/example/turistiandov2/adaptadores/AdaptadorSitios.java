@@ -72,7 +72,7 @@ public class AdaptadorSitios extends RecyclerView.Adapter<AdaptadorSitios.viewHo
                 @Override
                 public void onClick(View v) {
                     Intent intent = new Intent(itemView.getContext(), AmpliandoSitios.class);
-                    intent.putExtra("datoshotel",moldeSitios);
+                    intent.putExtra("datossitios",moldeSitios);
                     itemView.getContext().startActivity(intent);
                 }
             });

@@ -16,7 +16,7 @@ public class Ampliando_restaurante extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ampliando_restaurante);
 
-        moldeRestaurantes=(MoldeRestaurantes)getIntent().getSerializableExtra("datoshotel");
+        moldeRestaurantes=(MoldeRestaurantes)getIntent().getSerializableExtra("datosrestaurante");
         Toast.makeText(this, moldeRestaurantes.getNombre(), Toast.LENGTH_LONG).show();
     }
 }
