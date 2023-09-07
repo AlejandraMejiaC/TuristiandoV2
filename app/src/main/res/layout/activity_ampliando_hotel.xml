@@ -12,40 +12,41 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="HOSTAL CANO NEVERA"
-        android:textStyle="bold"
         android:textAlignment="center"
         android:textColor="@color/cornflowerblue"
         android:textSize="25dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintHorizontal_bias="0.05"
-        app:layout_constraintVertical_bias="0.120" />
+        app:layout_constraintVertical_bias="0.104" />
 
     <ImageView
         android:id="@+id/FotoAmpliandoHotel"
-        android:layout_width="290dp"
-        android:layout_height="210dp"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
         android:src="@drawable/canonevera"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/NombreAmpliandoHotel"
-        app:layout_constraintVertical_bias="0.055" />
+        app:layout_constraintVertical_bias="0.042" />
 
     <TextView
         android:id="@+id/descripcioAmpliandoHotel"
-        android:layout_width="355dp"
-        android:layout_height="100dp"
+        android:layout_width="400dp"
+        android:layout_height="95dp"
         android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vestibulum quam nec justo efficitur, a ultrices eros tristique. Nulla facilisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla facilisi. Nullam ac nunc eu elit aliquet aliquam."
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/FotoAmpliandoHotel"
-        app:layout_constraintVertical_bias="0.075" />
+        app:layout_constraintVertical_bias="0.037" />
 
     <TextView
         android:id="@+id/precioHotelAmpliando"
@@ -58,10 +59,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.120"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/descripcioAmpliandoHotel"
-        app:layout_constraintVertical_bias="0.05" />
+        app:layout_constraintHorizontal_bias="0.413"
+        app:layout_constraintStart_toEndOf="@id/FotoAmpliandoHotel"
+        app:layout_constraintTop_toBottomOf="@id/NombreAmpliandoHotel"
+        app:layout_constraintVertical_bias="0.03" />
 
     <TextView
         android:id="@+id/telefonoHotelAmpliando"
@@ -74,10 +75,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.20"
-        app:layout_constraintStart_toEndOf="@id/precioHotelAmpliando"
-        app:layout_constraintTop_toBottomOf="@id/descripcioAmpliandoHotel"
-        app:layout_constraintVertical_bias="0.05" />
+        app:layout_constraintHorizontal_bias="0.413"
+        app:layout_constraintStart_toEndOf="@id/FotoAmpliandoHotel"
+        app:layout_constraintTop_toBottomOf="@id/iconAmpliandoHotel"
+        app:layout_constraintVertical_bias="0.069" />
 
     <ImageView
         android:id="@+id/iconAmpliandoHotel"
@@ -86,26 +87,53 @@
         android:src="@drawable/iconoampliandohotel"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.175"
+        app:layout_constraintHorizontal_bias="0.763"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/precioHotelAmpliando"
-        app:layout_constraintVertical_bias="0.200" />
+        app:layout_constraintVertical_bias="0.031" />
 
-    <Button
-        android:layout_width="205dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="32dp"
-        android:backgroundTint="@color/cornflowerblue"
-        android:text="RESERVAR"
-        android:textSize="20dp"
+    <ImageView
+        android:layout_width="155dp"
+        android:layout_height="200dp"
+
+
+        android:layout_marginTop="12dp"
+        android:src="@drawable/hostalcanonevera2"
+        app:layout_constraintTop_toBottomOf="@id/descripcioAmpliandoHotel"
+        tools:layout_editor_absoluteX="250dp" />
+
+    <ImageView
+        android:layout_width="85dp"
+        android:layout_height="65dp"
+        android:src="@drawable/clasificacion"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toEndOf="@id/valoracionAmpliandoHotel"
+        app:layout_constraintTop_toBottomOf="@id/descripcioAmpliandoHotel"
+        app:layout_constraintVertical_bias="0.075" />
+
+    <TextView
+        android:id="@+id/valoracionAmpliandoHotel"
+        android:layout_width="100dp"
+        android:layout_height="65dp"
+        android:text="1.5"
+        android:textAlignment="center"
+        android:textColor="@color/cornflowerblue"
+        android:textSize="45dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.175"
-        app:layout_constraintStart_toEndOf="@id/iconAmpliandoHotel"
-        app:layout_constraintTop_toBottomOf="@id/telefonoHotelAmpliando"
-        app:layout_constraintVertical_bias="0.0"/>
+        app:layout_constraintHorizontal_bias="0.050"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/descripcioAmpliandoHotel"
+        app:layout_constraintVertical_bias="0.060" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width=""
+        android:layout_height=""
+        app:layout_constraintTop_toBottomOf="@id/valoracionAmpliandoHotel"
+        />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
