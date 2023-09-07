@@ -57,8 +57,8 @@ public class AdaptadorSitios extends RecyclerView.Adapter<AdaptadorSitios.viewHo
              nombreGuia = itemView.findViewById(R.id.nombreGuiaMoldeSitios);
              fotoSitios = itemView.findViewById(R.id.fotoMoldeSitios);
              nombreSitio = itemView.findViewById(R.id.lugarTuristico);
-             contactoGuia = itemView.findViewById(R.id.numeroContactoMoldeSitios);
-             precioSitio = itemView.findViewById(R.id.precioMoldeSitios);
+             contactoGuia = itemView.findViewById(R.id.telefonoguia);
+             precioSitio = itemView.findViewById(R.id.copMoldeSitios);
         }
 
         public void actualizarDatos(MoldeSitios moldeSitios) {

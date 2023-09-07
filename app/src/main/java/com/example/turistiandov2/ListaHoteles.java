@@ -29,10 +29,10 @@ public class ListaHoteles extends AppCompatActivity {
         }
 
         public  void llenarListaConDatos (){
-            listadehoteles.add(new MoldeHotel("Hostal Cano Nevera","$140.000","314 4626899",R.drawable.canonevera));
-            listadehoteles.add(new MoldeHotel("La Manigua Lodge","$622.000"," 314 7569808",R.drawable.manigua));
-            listadehoteles.add(new MoldeHotel("Hotel La Fuente","$180.000","313 4967701",R.drawable.hotellafuente));
-            listadehoteles.add(new MoldeHotel("Posada Los Cristales","$65.000","322 4228084",R.drawable.hotelposadacristales));
-            listadehoteles.add(new MoldeHotel("Hotel Ecologico Makalombia","$287.000"," 311 3741990",R.drawable.makalombia));
+            listadehoteles.add(new MoldeHotel("Hostal Cano Nevera","$140.000","314 4626899",R.drawable.canonevera,"hotel hermoso y agradable"));
+            listadehoteles.add(new MoldeHotel("La Manigua Lodge","$622.000"," 314 7569808",R.drawable.manigua,"hotel hermoso y agradable"));
+            listadehoteles.add(new MoldeHotel("Hotel La Fuente","$180.000","313 4967701",R.drawable.hotellafuente,"hotel hermoso y agradable"));
+            listadehoteles.add(new MoldeHotel("Posada Los Cristales","$65.000","322 4228084",R.drawable.hotelposadacristales,"hotel hermoso y agradable"));
+            listadehoteles.add(new MoldeHotel("Hotel Ecologico Makalombia","$287.000"," 311 3741990",R.drawable.makalombia,"hotel hermoso y agradable"));
         }
 }
