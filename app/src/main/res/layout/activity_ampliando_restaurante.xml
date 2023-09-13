@@ -12,45 +12,46 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="HOSTAL CANO NEVERA"
-        android:textStyle="bold"
         android:textAlignment="center"
         android:textColor="@color/cornflowerblue"
         android:textSize="25dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintHorizontal_bias="0.05"
-        app:layout_constraintVertical_bias="0.120" />
+        app:layout_constraintVertical_bias="0.104" />
 
     <ImageView
         android:id="@+id/FotoAmpliandoRes"
-        android:layout_width="290dp"
-        android:layout_height="210dp"
+        android:layout_width="215dp"
+        android:layout_height="180dp"
         android:src="@drawable/canonevera"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/NombreAmpliandoRes"
-        app:layout_constraintVertical_bias="0.055" />
+        app:layout_constraintVertical_bias="0.042" />
 
     <TextView
         android:id="@+id/descripcioAmpliandoRes"
-        android:layout_width="355dp"
-        android:layout_height="100dp"
+        android:layout_width="165dp"
+        android:layout_height="180dp"
         android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vestibulum quam nec justo efficitur, a ultrices eros tristique. Nulla facilisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla facilisi. Nullam ac nunc eu elit aliquet aliquam."
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/FotoAmpliandoRes"
-        app:layout_constraintVertical_bias="0.075" />
+        app:layout_constraintHorizontal_bias="0.609"
+        app:layout_constraintStart_toEndOf="@id/FotoAmpliandoRes"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.226" />
 
     <TextView
-        android:id="@+id/precioAmpliandoRes"
-        android:layout_width="350dp"
-        android:layout_height="40dp"
+        android:id="@+id/precioResAmpliando"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
         android:text="250.000"
         android:textAlignment="center"
         android:textColor="@color/cornflowerblue"
@@ -58,15 +59,15 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintHorizontal_bias="0.855"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/descripcioAmpliandoRes"
-        app:layout_constraintVertical_bias="0.061" />
+        app:layout_constraintVertical_bias="0.031" />
 
     <TextView
-        android:id="@+id/telefonoAmpliandoRes"
-        android:layout_width="350dp"
-        android:layout_height="40dp"
+        android:id="@+id/telefonoResAmpliando"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
         android:text="3255036829"
         android:textAlignment="center"
         android:textColor="@color/cornflowerblue"
@@ -74,36 +75,87 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/descripcioAmpliandoRes"
-        app:layout_constraintVertical_bias="0.3" />
+        app:layout_constraintTop_toBottomOf="@id/precioResAmpliando"
+        app:layout_constraintVertical_bias="0.021" />
 
     <ImageView
-        android:id="@+id/iconAmpliandoHotel"
-        android:layout_width="65dp"
-        android:layout_height="65dp"
+        android:id="@+id/iconAmpliandoRes"
+        android:layout_width="84dp"
+        android:layout_height="50dp"
+        android:src="@drawable/recompensa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/FotoAmpliandoRes"
+        app:layout_constraintVertical_bias="0.031" />
+
+    <ImageView
+        android:id="@+id/icon2AmpliandoRes"
+        android:layout_width="84dp"
+        android:layout_height="50dp"
         android:src="@drawable/iconoampliandohotel"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintHorizontal_bias="0.963"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/precioAmpliandoRes"
-        app:layout_constraintVertical_bias="0.429" />
+        app:layout_constraintTop_toBottomOf="@id/iconAmpliandoRes"
+        app:layout_constraintVertical_bias="0.019" />
 
-    <Button
-        android:id="@+id/botonReservarHoteles"
-        android:layout_width="255dp"
-        android:layout_height="60dp"
-        android:backgroundTint="@color/cornflowerblue"
-        android:text="RESERVAR"
-        android:textSize="20dp"
-        android:textStyle="bold"
+    <ImageView
+        android:id="@+id/imagen2AmpliandoRes"
+        android:layout_width="200dp"
+        android:layout_height="155dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/hostalcanonevera2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.82"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/telefonoAmpliandoRes"
-        app:layout_constraintVertical_bias="0.138" />
+        app:layout_constraintTop_toBottomOf="@id/descripcioAmpliandoRes"
+        app:layout_constraintVertical_bias="0.459" />
+
+    <RatingBar
+        android:id="@+id/valoracionAmpliandoRes"
+        android:layout_width="246dp"
+        android:layout_height="58dp"
+        android:progressBackgroundTint="@color/gray"
+        android:progressTint="@color/cornflowerblue"
+        android:rating="1.2"
+        android:textAlignment="center"
+        android:textSize="45dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imagen2AmpliandoRes"
+        app:layout_constraintVertical_bias="0.097" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardviewAmpliandoRes"
+        android:layout_width="200dp"
+        android:layout_height="155dp"
+        android:text="comentario"
+        android:textColor="@color/white"
+        app:cardBackgroundColor="@color/cornflowerblue"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/telefonoResAmpliando"
+        app:layout_constraintVertical_bias="0.084">
+        <TextView
+            android:id="@+id/textoComentarioRes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Contenido del comentario aquí"
+            android:gravity="center"
+            android:padding="16dp" />
+    </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

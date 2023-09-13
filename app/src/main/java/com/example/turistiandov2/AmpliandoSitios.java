@@ -24,8 +24,8 @@ public class AmpliandoSitios extends AppCompatActivity {
         setContentView(R.layout.activity_ampliando_sitios);
         fotoAmpliandoSitios=findViewById(R.id.FotoAmpliandoSitios);
         nombreAmpliandoSitios=findViewById(R.id.NombreAmpliandoSitios);
-        precioAmpliandoSitios=findViewById(R.id.precioAmpliandoSitios);
-        contactoAmpliandoSitios=findViewById(R.id.telefonoAmpliandoSitios);
+        precioAmpliandoSitios=findViewById(R.id.precioSitiosAmpliando);
+        contactoAmpliandoSitios=findViewById(R.id.telefonoSitiosAmpliando);
         moldeSitios=(MoldeSitios) getIntent().getSerializableExtra("datossitios");
 
         //cargando la info en los companentes graficos

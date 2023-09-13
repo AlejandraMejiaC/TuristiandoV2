@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.RatingBar;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -56,12 +57,20 @@ public class AdaptadorHoteles extends RecyclerView.Adapter<AdaptadorHoteles.view
         TextView nombreHotel;
         TextView precioHotel;
         TextView contactoHotel;
+        ImageView fotoHotel2;
+        RatingBar valoracionHotel;
+        TextView comentarioHotel;
+        TextView descripcionHotel;
         public viewHolder(@NonNull View itemView) {
             super(itemView);
             fotoHotel=itemView.findViewById(R.id.fotoMoldeHotel);
             nombreHotel=itemView.findViewById(R.id.hotelMolde);
             precioHotel=itemView.findViewById(R.id.copMoldeHotel);
             contactoHotel =itemView.findViewById(R.id.numeroContactoMoldeHotel);
+            fotoHotel2= itemView.findViewById(R.id.imagen2HotelAmpliando);
+            valoracionHotel = itemView.findViewById(R.id.valoracionHotelAmpliando);
+            comentarioHotel = itemView.findViewById(R.id.textoComentario);
+            descripcionHotel = itemView.findViewById(R.id.descripcioAmpliandoHotel);
         }
 
         public  void actualizarDatos(MoldeHotel moldeHotel) {
@@ -69,6 +78,10 @@ public class AdaptadorHoteles extends RecyclerView.Adapter<AdaptadorHoteles.view
             nombreHotel.setText(moldeHotel.getNombre());
             precioHotel.setText(moldeHotel.getPrecio());
             contactoHotel.setText(moldeHotel.getTelefono());
+            fotoHotel2.setImageResource(moldeHotel.getFoto2());
+            valoracionHotel.setRating(moldeHotel.getValoracion());
+            comentarioHotel.setText(moldeHotel.getComentario());
+            descripcionHotel.setText(moldeHotel.getDescripcion());
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
