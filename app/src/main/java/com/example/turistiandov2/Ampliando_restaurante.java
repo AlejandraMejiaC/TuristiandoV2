@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.ImageView;
+import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -17,6 +18,10 @@ public class Ampliando_restaurante extends AppCompatActivity {
     TextView nombreAmpliandoRestaurantes;
     TextView precioAmpliandoRestaurantes;
     TextView contactoAmpliandoRestaurantes;
+    TextView comentarioAmpliandoRestaurantes;
+    TextView descripcionAmpliandoRestaurante;
+    RatingBar valoracionAmpliandoRestaurante;
+    ImageView foto2AmpliandoRestaurante;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,6 +30,10 @@ public class Ampliando_restaurante extends AppCompatActivity {
         nombreAmpliandoRestaurantes=findViewById(R.id.NombreAmpliandoRes);
         precioAmpliandoRestaurantes=findViewById(R.id.precioResAmpliando);
         contactoAmpliandoRestaurantes=findViewById(R.id.telefonoResAmpliando);
+        comentarioAmpliandoRestaurantes=findViewById(R.id.textoComentarioRes);
+        descripcionAmpliandoRestaurante=findViewById(R.id.descripcioAmpliandoRes);
+        valoracionAmpliandoRestaurante=findViewById(R.id.valoracionAmpliandoRes);
+        foto2AmpliandoRestaurante=findViewById(R.id.imagen2AmpliandoRes);
 
         moldeRestaurantes=(MoldeRestaurantes)getIntent().getSerializableExtra("datosrestaurante");
         //cargando la info en los companentes graficos
@@ -32,5 +41,9 @@ public class Ampliando_restaurante extends AppCompatActivity {
         nombreAmpliandoRestaurantes.setText(moldeRestaurantes.getNombre());
         precioAmpliandoRestaurantes.setText(moldeRestaurantes.getRangoPrecio());
         contactoAmpliandoRestaurantes.setText(moldeRestaurantes.getTelefono());
+        comentarioAmpliandoRestaurantes.setText(moldeRestaurantes.getComentario());
+        descripcionAmpliandoRestaurante.setText(moldeRestaurantes.getDescripcion());
+        valoracionAmpliandoRestaurante.setRating(moldeRestaurantes.getValoracion());
+        foto2AmpliandoRestaurante.setImageResource(moldeRestaurantes.getFoto2());
     }
 }

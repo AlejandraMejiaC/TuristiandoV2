@@ -11,7 +11,6 @@ public class MoldeSitios implements Serializable {
     private Integer foto;
     private Integer foto2;
     private Float valoracion;
-
     private String descripcion;
     private String comentario;
 

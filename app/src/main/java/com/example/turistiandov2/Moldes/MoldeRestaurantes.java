@@ -10,7 +10,6 @@ public class MoldeRestaurantes implements Serializable {
     private String rangoPrecio;
     private String platoRecomendado;
     private Float valoracion;
-
     private String descripcion;
     private String comentario;
 

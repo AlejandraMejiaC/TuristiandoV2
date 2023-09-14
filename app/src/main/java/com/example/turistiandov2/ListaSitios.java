@@ -29,7 +29,7 @@ public class ListaSitios extends AppCompatActivity {
     }
 
     private void llenarListaConDatos() {
-        listasitios.add(new MoldeSitios("Caño Cristales","Pepito Perez","325 5056829","$125.000",R.drawable.canocristales,R.drawable.canocristales2,5.0f,"En el centro de Colombia reside un tesoro de incalculable riqueza natural, un territorio biodiverso enmarcado por ríos coloridos, bosques y vastas llanuras que se repliegan en el municipio de La Macarena, área protegida por Parques Naturales Nacionales de Colombia","Es un lugar increiblemente hermoso y los colores del rio paren irreales"));
+        listasitios.add(new MoldeSitios("Caño Cristales","Pepito Perez","325 5056829","$125.000",R.drawable.canocristales,R.drawable.canocristalitos2,5.0f,"En el centro de Colombia reside un tesoro de incalculable riqueza natural, un territorio biodiverso enmarcado por ríos coloridos, bosques y vastas llanuras que se repliegan en el municipio de La Macarena, área protegida por Parques Naturales Nacionales de Colombia","Es un lugar increiblemente hermoso y los colores del rio paren irreales"));
         listasitios.add(new MoldeSitios("Jardín Botánico De La Macarena","Samantha Jaramillo","328 5066850","$155.000",R.drawable.jardinbotanico,R.drawable.jardin2,5.0f,"El jardín botánico tiene en sus 650 hectáreas más de 4% de la biodiversidad vegetal colombiana.\n" +
                 "\n" +
                 "Es una reserva ecológica, centro de estudio de flora y fauna.\n" +
