@@ -1,13 +1,20 @@
 package com.example.turistiandov2;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.widget.Toast;
 
 import com.example.turistiandov2.Moldes.MoldeSitios;
 import com.example.turistiandov2.adaptadores.AdaptadorSitios;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
+import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.ArrayList;
 
@@ -16,12 +23,39 @@ public class ListaSitios extends AppCompatActivity {
     ArrayList <MoldeSitios> listasitios=new ArrayList<>();
     RecyclerView recyclerView;
 
+    FirebaseFirestore db = FirebaseFirestore.getInstance();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lista_sitios);
         recyclerView=findViewById(R.id.listadinamicasitios);
         recyclerView.setLayoutManager(new LinearLayoutManager(this,RecyclerView.VERTICAL,false));
+
+        db.collection("sitios")
+                .get()
+                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                        if (task.isSuccessful()) {
+                            for (QueryDocumentSnapshot document : task.getResult()) {
+
+                                String nombreSitios=document.getString("nombre");
+                                String nombreGuiaSitios=document.getString("nombre guia");
+                                String precioSitios=document.getString("precio");
+                                String telefonoSitios=document.getString("telefono");
+                                String descripcionSitios=document.getString("descripcion");
+                                Toast.makeText(ListaSitios.this, nombreSitios, Toast.LENGTH_SHORT).show();
+                                Toast.makeText(ListaSitios.this, nombreGuiaSitios, Toast.LENGTH_SHORT).show();
+                                Toast.makeText(ListaSitios.this, precioSitios, Toast.LENGTH_SHORT).show();
+                                Toast.makeText(ListaSitios.this, telefonoSitios, Toast.LENGTH_SHORT).show();
+                                Toast.makeText(ListaSitios.this, descripcionSitios, Toast.LENGTH_SHORT).show();
+                            }
+                        } else {
+                            //Log.w(TAG, "Error getting documents.", task.getException());
+                        }
+                    }
+                });
 
         llenarListaConDatos();
         AdaptadorSitios adaptadorSitios=new AdaptadorSitios(listasitios);
